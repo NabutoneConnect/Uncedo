@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Uncedo</string>
+    <string name="title_activity_splash">SplashActivity</string>
+
+    <string-array name = "IllnessCategory">
+        <item>Select the Illness Category:</item>
+        <item>Deficiency</item>
+        <item>Degenerative</item>
+        <item>Infectious</item>
+        <item>Non-Infectious</item>
+        <item>Inherited</item>
+        <item>Mental</item>
+        <item>Physical</item>
+        <item>Self-Inflicted</item>
+        <item>Social</item>
+    </string-array>
+
+    <string-array name="ProblemCategory">
+        <item>Select your Problem Category:</item>
+        <item>Staff behaviour</item>
+        <item>Incorrect treatment</item>
+        <item>Clinical negligence</item>
+        <item>Poor satisfactory service</item>
+        <item>A medical product has failed</item>
+        <item>Errors/loss of medical records</item>
+        <item>Waiting a long time for treatment</item>
+        <item>Discrimination(Gender,Race,Disacility,Age)</item>
+
+
+    </string-array>
+</resources>

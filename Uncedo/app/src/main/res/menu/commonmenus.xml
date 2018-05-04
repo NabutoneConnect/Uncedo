@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mnuMenu"
+        android:title="MENU"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/mnuView"
+        android:icon="@drawable/ic_action_view_info"
+        android:title="View Personal Info"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/mnuUpdate"
+        android:icon="@drawable/ic_action_update_info"
+        android:title="Update Information"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/mnuViewCompl"
+        android:title="View Complaint"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/mnuLaunchCom"
+        android:icon="@drawable/ic_action_view_complaint"
+        android:title="Launch Complain"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/mnuExit"
+        android:icon="@drawable/ic_action_exit"
+        android:title="Exit"
+        app:showAsAction="never" />
+</menu>

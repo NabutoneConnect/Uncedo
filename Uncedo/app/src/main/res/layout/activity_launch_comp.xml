@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lamalis.uncedo.LaunchCompActivity">
+
+    <Spinner
+        android:id="@+id/sprIllnessCategory"
+        android:layout_width="330dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/sprProblemCategory"
+        android:layout_alignLeft="@+id/sprProblemCategory"
+        android:layout_alignStart="@+id/sprProblemCategory"
+        android:layout_marginBottom="8dp" />
+
+    <Spinner
+        android:id="@+id/sprProblemCategory"
+        android:layout_width="330dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/txtDate"
+        android:layout_alignLeft="@+id/txtDate"
+        android:layout_alignStart="@+id/txtDate"
+        android:layout_marginBottom="47dp" />
+
+    <EditText
+        android:id="@+id/txtDate"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtDiscription"
+        android:layout_alignLeft="@+id/txtDiscription"
+        android:layout_alignStart="@+id/txtDiscription"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="Date of Occurance: (DD/MM/YY)"
+        android:inputType="date"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/txtDiscription"
+        android:layout_width="330dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/txtCommAlt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="Problem Discription"
+        android:inputType="textMultiLine"
+        android:textSize="13sp" />
+
+    <RadioButton
+        android:id="@+id/rdoEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnComplain"
+        android:layout_alignLeft="@+id/txtDiscription"
+        android:layout_alignStart="@+id/txtDiscription"
+        android:layout_marginBottom="32dp"
+        android:text="Via: Email"
+        android:textSize="13sp" />
+
+    <RadioButton
+        android:id="@+id/rdoSms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rdoEmail"
+        android:layout_alignBottom="@+id/rdoEmail"
+        android:layout_centerHorizontal="true"
+        android:text="Via: SMS"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/btnComplain"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:text="Submit Complaint"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/txtCommAlt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rdoSms"
+        android:layout_alignLeft="@+id/rdoEmail"
+        android:layout_alignStart="@+id/rdoEmail"
+        android:layout_marginBottom="12dp"
+        android:text="Prefared Alternative form of Communication"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtLauchCompl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="Complaint Form"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sprIllnessCategory"
+        android:layout_alignStart="@+id/sprIllnessCategory"
+        android:layout_below="@+id/txtLauchCompl"
+        android:layout_marginTop="29dp"
+        android:text="Please complete all fields respectively"
+        android:textColor="@color/colorAccent"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+</android.widget.RelativeLayout>
